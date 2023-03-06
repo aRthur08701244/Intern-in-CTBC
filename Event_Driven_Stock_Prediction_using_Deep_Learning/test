@@ -1,0 +1,93 @@
+# # import itertools
+# # for i, j in itertools.product(range(3, 6), range(5, 10)):
+# #     print(i, j)
+
+# #!/usr/bin/python
+
+
+
+# import json
+# import os
+# import datetime
+# from cv2 import sort
+# import nltk
+# import numpy as np
+# import pandas as pd
+
+# # def readGlove(we_file):
+# #     wordVec = np.zeros([0,100])
+# #     with open(we_file) as file:
+# #         for line in file:
+# #             line = line.strip().split()
+# #             line = list(map(float,line))
+# #             wordVec = np.vstack((wordVec,np.array(line).flatten()))
+# #     return wordVec
+
+# # wordEmbedding = readGlove('./input/wordEmbeddingsVocab.csv')
+# # print(wordEmbedding)
+
+
+
+# # loc = './input/WB_TransNews/train/'
+# # input_files = [f for f in os.listdir(loc) if f.endswith('cnyesnews.csv')]
+# # input_files = sorted(input_files)
+# # print(input_files[-10:-1])
+
+# # print(input_files)
+
+# # count = 0
+
+# # for file in input_files:
+# #     news = pd.read_csv(loc+file)
+# #     count += news.shape[0]
+# #     print(file, ': ', count)
+
+
+
+# w2i = './input/word2idx.json'
+# with open(w2i) as data_file:    
+#     word2idx = json.load(data_file)
+# count = 0
+# for (i, j) in zip(word2idx.keys(), word2idx.values()):
+#     if (j != count):
+#         print(i, j, count, end=' ')
+#         print(list(word2idx.keys())[count-5:count+5], end=' ')
+#         print(list(word2idx.values())[count-5:count+5], end=' ')
+#     if count > 1000:
+#         break
+#     count += 1
+
+
+
+# a = list(range(5001))
+# for i in list(word2idx.values()):
+#     a.remove(i)
+# print(a)
+# # print(word2idx)
+# # print(len(word2idx))
+
+
+
+# current_idx = 2
+# with open('./input/stockName_abbr.txt') as data_file:
+#     stockName = data_file.readlines()
+
+# for i in stockName:
+#     com = i.split(' ')[0]
+#     if current_idx == 375:
+#         print(com)
+#     current_idx += 1
+
+# import os
+
+# loc = './input2/stockFeatures_ForCNN/'
+
+# data_files = sorted([f for f in os.listdir(loc) if f.endswith('train.csv')])
+# print(len(data_files))
+
+
+import numpy as np
+print(np.load('./input1/X_train.npy').shape)
+print(np.load('./input2/X_train.npy').shape)
+
+print(np.mean([20, 10]))
