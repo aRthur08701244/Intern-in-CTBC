@@ -1,5 +1,5 @@
 # Intern-in-CTBC
-*There are two parts in my internship.
+* There are two parts in my internship.
 1. AI Investment
   a. Factor Investment
   b. News Sentiment Analysis
