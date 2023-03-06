@@ -1,0 +1,4 @@
+1.將所有股價資料放置 /data/price/ 下，一個股票代號一個檔案 （或是由priceFileProcess.py進行處理）
+2.執行 FactorStockPool.py  將股票依因子值分群
+3.執行 calculateFactorsReturn.py 依各因子分群的結果進行市值加權報酬計算
+4.執行backTest.py 進行效能回測 （目前僅最小化因子值變異數）
