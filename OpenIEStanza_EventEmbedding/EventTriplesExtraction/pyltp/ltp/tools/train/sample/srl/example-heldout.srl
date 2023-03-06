@@ -1,0 +1,8 @@
+1	中国	中国	中国	ns	ns	_	_	3	3	ATT	ATT	_	_	_
+2	进出口	进出口	进出口	n	n	_	_	3	3	ATT	ATT	_	_	_
+3	银行	银行	银行	n	n	_	_	7	7	SBV	SBV	_	_	A0
+4	与	与	与	p	p	_	_	3	3	ADV	ADV	_	_	_
+5	中国	中国	中国	ns	ns	_	_	6	6	ATT	ATT	_	_	_
+6	银行	银行	银行	n	n	_	_	4	4	POB	POB	_	_	_
+7	加强	加强	加强	v	v	_	_	0	0	HED	HED	Y	加强.01	_
+8	合作	合作	合作	v	v	_	_	7	7	VOB	VOB	_	_	A1
